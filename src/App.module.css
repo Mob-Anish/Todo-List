@@ -1,0 +1,106 @@
+.App {
+  display: grid;
+  grid-template-columns: 90rem auto;
+  height: 100vh;
+}
+
+@media (max-width: 1650px) {
+  .App {
+    display: grid;
+    grid-template-columns: 80rem auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .App {
+    display: grid;
+    grid-template-columns: 75rem auto;
+  }
+}
+
+.Cover {
+  background-image: url('./img/Todolist.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Todo {
+  padding-top: 20rem;
+  background: #fffffff7;
+}
+
+.form {
+  position: relative;
+  width: 38rem;
+  margin: auto;
+}
+
+.form input:focus::placeholder {
+  color: transparent;
+}
+
+.input {
+  border: none;
+  color: #fffffff7;
+  background: #62deee;
+  padding: 1.5rem 6rem 1.5rem 2.2rem;
+  border-radius: 3.2rem;
+  font-size: 1.9rem;
+  width: 38rem;
+}
+
+.input::placeholder {
+  color: #fffffff7;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  border: none;
+  border-radius: 3.2rem;
+  color: #fffffff7;
+  background: orange;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form button:active {
+  transform: scale(0.8);
+}
+
+.mdone {
+  font-size: 2.5rem;
+}
+
+.List {
+  margin-top: 6rem;
+}
+
+.List ul {
+  margin: auto;
+  width: 68rem;
+  padding-right: 2rem;
+  overflow-y: auto;
+  height: 65rem;
+  list-style: none;
+}
+
+.List ul li {
+  flex: 1;
+  background: orange;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fffffff7;
+}
+
