@@ -2,6 +2,7 @@ import {Component} from 'react';
 import classes from './App.module.css';
 import {MdDone} from 'react-icons/md';
 import {MdDelete} from 'react-icons/md';
+import styled from 'styled-components';
 
 class App extends Component {
   constructor(props) {
@@ -53,6 +54,13 @@ class App extends Component {
   };
 
   render() {
+    const Listers = styled.div`
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 1.5rem;
+    `;
+
     const style = {
       fontSize: '2.4rem',
     };
@@ -77,7 +85,7 @@ class App extends Component {
             <ul>
               {this.state.list.map((data) => {
                 return (
-                  <div className={classes.listers}>
+                  <Listers>
                     <li key={Math.random()}>{data.value}</li>
                     <button
                       className={classes.delbutton}
@@ -85,7 +93,7 @@ class App extends Component {
                     >
                       <MdDelete style={style} />
                     </button>
-                  </div>
+                  </Listers>
                 );
               })}
             </ul>

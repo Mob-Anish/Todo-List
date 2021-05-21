@@ -122,9 +122,4 @@
   transform: scale(0.8);
 }
 
-.listers {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-bottom: 1.5rem;
-}
+
