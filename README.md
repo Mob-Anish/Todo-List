@@ -1,1 +1,3 @@
-The project is under development stage 😅.
+## Todo List app
+
+It is a simple goto list application using react, css modules and some style components.

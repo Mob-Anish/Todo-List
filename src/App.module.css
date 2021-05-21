@@ -72,6 +72,20 @@
   transition: all 0.2s ease;
 }
 
+.delbutton {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fffffff7;
+  background: red;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
 .form button:active {
   transform: scale(0.8);
 }
@@ -104,3 +118,13 @@
   color: #fffffff7;
 }
 
+.List ul button:active {
+  transform: scale(0.8);
+}
+
+.listers {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
